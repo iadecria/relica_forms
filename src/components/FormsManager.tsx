@@ -86,7 +86,7 @@ export default function FormsManager({ onFormsChanged }: Props) {
         </div>
       ) : forms.length === 0 ? (
         <p className="text-xs text-ink-muted py-4">
-          Nenhum formulário personalizado ainda. O formulário padrão da Relica/Humana continua ativo.
+          Nenhum formulário personalizado ainda. O formulário padrão da Relica/HL Humana continua ativo.
         </p>
       ) : (
         <div className="space-y-2">

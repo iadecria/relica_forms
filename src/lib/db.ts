@@ -28,7 +28,7 @@ function readLocal(): LocalDb {
       require_manual_release: true,
       allow_edit_after_release: false,
       form_password: "humana",
-      form_company: "Humana",
+      form_company: "HL Humana",
     },
   };
 }
@@ -57,7 +57,7 @@ export async function getSettings(): Promise<Settings> {
     require_manual_release: true,
     allow_edit_after_release: false,
     form_password: "humana",
-    form_company: "Humana",
+    form_company: "HL Humana",
   };
   if (supabase) {
     const { data, error } = await supabase

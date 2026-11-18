@@ -71,7 +71,7 @@ export default function RespondentApp() {
     if (byId) return byId;
     return {
       id: "legacy",
-      company: r.company || "Humana",
+      company: r.company || "HL Humana",
       password: "",
       sections: DEFAULT_SECTIONS,
       created_at: r.created_at,

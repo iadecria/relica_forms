@@ -30,7 +30,7 @@ function sortRows(rows: ResponseRow[]) {
 function toMarkdown(r: Respondent, rows: ResponseRow[], sections: Section[]): string {
   const answered = rows.filter((row) => row.answer.trim()).length;
   const lines: string[] = [
-    `# Descoberta Humana — ${r.company}`,
+    `# Descoberta HL Humana — ${r.company}`,
     "",
     `> Documento gerado pela Relica para configuração do sistema da ${r.company}.`,
     "",

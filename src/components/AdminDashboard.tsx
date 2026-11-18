@@ -44,7 +44,7 @@ export default function AdminDashboard({ onLogout }: { onLogout: () => void }) {
   const [busyId, setBusyId] = useState<string | null>(null);
   const [releasingAll, setReleasingAll] = useState<string | null>(null);
   const [resetting, setResetting] = useState<string | null>(null);
-  const [form, setForm] = useState({ form_company: "Humana", form_password: "humana" });
+  const [form, setForm] = useState({ form_company: "HL Humana", form_password: "humana" });
   const [savingAccess, setSavingAccess] = useState(false);
   const [accessSaved, setAccessSaved] = useState(false);
   const [accessError, setAccessError] = useState<string | null>(null);
@@ -62,7 +62,7 @@ export default function AdminDashboard({ onLogout }: { onLogout: () => void }) {
       setSettings(s);
       setForms(f);
       setForm({
-        form_company: s.form_company ?? "Humana",
+        form_company: s.form_company ?? "HL Humana",
         form_password: s.form_password ?? "humana",
       });
     } catch {
@@ -370,7 +370,7 @@ export default function AdminDashboard({ onLogout }: { onLogout: () => void }) {
                 className="rounded-xl border border-line bg-white px-3 py-1.5 text-xs text-ink-soft focus:outline-none focus:ring-2 focus:ring-primary/40"
               >
                 <option value="all">Todos</option>
-                <option value="legacy">Padrão (Relica/Humana)</option>
+                <option value="legacy">Padrão (Relica/HL Humana)</option>
                 {forms.map((f) => (
                   <option key={f.id} value={f.id}>
                     {f.company}

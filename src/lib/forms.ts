@@ -168,7 +168,7 @@ export async function findFormByPassword(password: string): Promise<FormDef | nu
     const settings = await getSettings();
     const legacyKey = normalizeKey(settings.form_password ?? "");
     if (legacyKey && legacyKey === key) {
-      return legacyForm(settings.form_company || "Humana", password);
+      return legacyForm(settings.form_company || "HL Humana", password);
     }
   } catch {
     // settings unavailable

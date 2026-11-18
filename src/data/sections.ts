@@ -181,7 +181,7 @@ export const TOTAL_SECTIONS = SECTIONS.length;
 export const DEFAULT_SECTIONS: Section[] = JSON.parse(JSON.stringify(SECTIONS));
 
 export const FINAL_MESSAGE =
-  "Obrigado! Essas respostas vão direto para a configuração do sistema da Humana na Relica.";
+  "Obrigado! Essas respostas vão direto para a configuração do sistema da HL Humana na Relica.";
 
 export const WAITING_MESSAGE =
   "Módulo concluído e enviado. Aguardando liberação do administrador para acessar o próximo nível.";
